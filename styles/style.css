@@ -15,8 +15,8 @@
   min-height: 600px;
   max-height: 756px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   background-color: #f2f2f2;
   position: relative;
   /* выше установили ограничения для секции */
@@ -54,8 +54,9 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  z-index: 1;
+  z-index: 3;
   color: #000;
+  margin: 0 0 0 0;
 }
 
 .header__link {
@@ -93,11 +94,8 @@
 .two-columns {
   display: flex;
   justify-content: space-between;
-  /*top: 100px;
-  bottom: 100px;*/
   margin: 100px 0 100px 0;
-  position: relative;
-}
+ }
 
 .two-columns__brief {
   width: 175px;
@@ -241,6 +239,8 @@
   width: 877px;
   height: 877px;
   z-index: 0;
+  background-size: cover;
+  background-image: url("../images/kaufman-triangle.svg");
 }
 
 .section-title_theme_dark {
@@ -281,7 +281,7 @@
   display: flex;
 }
 
-.footer__columns {
+.footer__columns {  
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -307,6 +307,7 @@
 }
 
 .footer__author {
+  display: flex;
   color: white;
   text-decoration: none;
   padding: 18px 0 18px 0;
@@ -321,6 +322,7 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
+  margin: 0 0 20px 0;
 }
 
 .footer__column-links {
@@ -328,6 +330,17 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0 0 0 0;
+}
+
+.footer__column-links:first-child {
+  margin-top: 20px;
+}
+
+.footer__column-links:last-child {
+  margin-bottom: 16px;
 }
 
 .footer__column_content_social {
@@ -342,27 +355,4 @@
   width: 16px;
   text-decoration: none;
   margin: 0 10px 0 0;
-}
-
-.column-link_paragraph {
-  margin: 0 0 0 0;
-  white-space: nowrap;
-}
-
-.column-link_paragraph:first-child {
-  margin-top: 20px;
-}
-
-.column-link_paragraph:last-child {
-  margin-bottom: 16px;
-}
-
-.column-link {
-  color: white;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-  text-decoration: none;
-  margin: 0 0 0 0;
-  white-space: nowrap;
 }
