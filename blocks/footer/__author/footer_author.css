@@ -1,0 +1,14 @@
+.footer__author {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  padding: 18px 0 18px 0;
+  transition-property: opacity;
+  transition-delay: 0;
+  transition-duration: 1s;
+  opacity: 1;
+}
+
+.footer__author:hover {
+  opacity: 0.2;
+}
