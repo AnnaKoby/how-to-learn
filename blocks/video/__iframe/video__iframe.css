@@ -3,6 +3,7 @@
   width: 515px;
   margin-top: 50px;
   margin-bottom: 0;
+  border: none;
 }
 
 .video__iframe:first-child {
